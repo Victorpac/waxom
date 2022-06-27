@@ -8,6 +8,7 @@ p {
 .button {
   background-color: #998675;
   border-bottom: 3px solid #736357;
+  border-radius: 3px;
   text-decoration: none;
   text-transform: uppercase;
   padding: 20px 35px;
@@ -359,21 +360,45 @@ header {
     .portfolio .container .button {
       padding: 17px 45px; }
 
-@media (max-width: 1920px) {
-  .container {
-    max-width: 1200px; } }
-
-@media (max-width: 1920px) and (max-width: 1440px) and (max-width: 992px) {
-  .container {
-    max-width: 960px; } }
-
-@media (max-width: 1920px) and (max-width: 1440px) and (max-width: 992px) and (max-width: 768px) {
-  .container {
-    max-width: 720px; } }
-
-@media (max-width: 1920px) and (max-width: 1440px) and (max-width: 992px) and (max-width: 768px) and (max-width: 575px) {
-  .container {
-    max-width: 540px; } }
+.video-presentation {
+  background-color: #828384;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw; }
+  .video-presentation .video-presentation__video {
+    width: 100vw; }
+  .video-presentation .video-preview {
+    position: absolute;
+    color: #fff;
+    text-align: center; }
+    .video-presentation .video-preview .video-preview__title {
+      font-size: 30px;
+      font-family: "Raleway";
+      font-weight: 400;
+      line-height: 1.2;
+      margin-top: 40px;
+      margin-bottom: 20px; }
+    .video-presentation .video-preview .video-preview__description {
+      font-size: 16px;
+      font-family: "Montserrat";
+      color: white;
+      opacity: .7;
+      line-height: 1.75;
+      width: 562px; }
+    .video-presentation .video-preview .video-preview__total-video-time {
+      font-size: 14px;
+      font-family: "Montserrat";
+      color: #c7b299;
+      line-height: 1.714;
+      margin-top: 30px; }
+    .video-presentation .video-preview .video-preview__play-video {
+      background-color: rgba(0, 0, 0, 0.3);
+      border: none;
+      border-radius: 50%;
+      padding: 15px;
+      padding-bottom: 13px; }
 
 @-webkit-keyframes showSlide {
   from {
